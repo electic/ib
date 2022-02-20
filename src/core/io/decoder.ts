@@ -726,6 +726,7 @@ export class Decoder {
     orderDecoder.readSmartComboRoutingParams();
     orderDecoder.readScaleOrderParams();
     orderDecoder.readHedgeParams();
+    this.dataQueue.shift();
     orderDecoder.readOptOutSmartRouting();
     orderDecoder.readClearingParams();
     orderDecoder.readNotHeld();
